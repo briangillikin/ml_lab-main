@@ -14,9 +14,9 @@
     sudo apt-get install gcc
     sudo apt-get install g++
     ```
-2. Create a `.env` file in the root of the repo that has 1 variable "ROOT_DIR" with its value equal to the absolute path to the repo's directory, for example:
+2. Create a `.env` file in the root of the repo that has 1 variable "ROOT_DIR" with its value equal to the absolute path to the repo's directory, for example (and using your name instead of mine):
     ```
-    ROOT_DIR="/Users/jillvillany/Github/ml_lab"
+    ROOT_DIR="/Users/briangillikin/Github/ml_lab"
     ```
 3. Run `python setup.py`
 
