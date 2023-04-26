@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Input Text</th>
+        <th scope="col">Keyword Counts</th>
+        <th scope="col">Classification</th>
+        <th scope="col">Confidence</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ input_text }}</td>
+        <td>
+          {% for key in keywords %}
+            {{ key }}: {{ keywords[key] }} <br>
+          {% endfor %}
+        </td>
+        <td>{{ classification }}</td>
+        <td>{{ confidence }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <form id="returnHome" action="/home" method="get">
+    <button type="submit" class="btn btn-secondary">Classify New Example</button>
+  </form>
+</div>
+{% endblock %}

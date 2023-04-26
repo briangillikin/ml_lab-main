@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "ml_lab"
+version = "0.1.0"
+description = ""
+authors = [
+    "Jill Villany <jillian.villany@ibm.com>",
+    "Max Barshay <maxbarshay@ibm.com>"
+    ]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+spacy = "^3.5.0"
+torch = "^1.13.1"
+pandas = "^1.5.3"
+scipy = ">=1.4.1,<1.10"
+numpy = ">=1.16.0,<1.24"
+ipykernel = "^6.21.2"
+torchvision = "^0.14.1"
+scikit-learn = "^1.2.1"
+imblearn = "^0.0"
+pandas-profiling = "^3.6.6"
+IProgress = "^0.4"
+plotly = "^5.13.1"
+nbformat = "^5.7.3"
+python-dotenv = "^1.0.0"
+symspellpy = "^6.7.7"
+ray = "^2.3.1"
+tabulate = "^0.9.0"
+ipywidgets = "^8.0.6"
+tensorboardx = "^2.6"
+flask = "^2.2.3"
+jupyter = "^1.0.0"
+notebook = "^6.5.3"
+tensorboard = "^2.12.1"
+tqdm = "4.64.1"
+pytest = "^7.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

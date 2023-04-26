@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content">
+    <h3>About the 4138 form:</h3>
+    <p>The 4138 is used by a veteran (or others with firsthand information) to provide context regarding a veteran's VA benefits request</p>
+    <h3>About the 4138 classifier:</h3>
+    <p>
+        This classifier is used to help route veteran benefit requests to the apppropriate VA work queue.
+        <br><br>
+        Classifications include: BVA_APPEALS_REMAND, COMPETENCY_ISSUE, CUE, DEPENDENCY_REQUEST, DEPENDENCY_REQUEST_REMOVAL, PAYMENT_ISSUE, DMC_ISSUE, EXAM_ISSUE, FOIA, MEDICAID_NURSING_HOME, NOTICE_OF_DEATH and UNKNOWN
+    <form action="/classification" method="post">
+        <label for="inputText" class="form-label">Enter Text:</label>
+        <p><b>For example:</b> I need to add my son as a dependent to my claim</p>
+        <input type="text" class="form-control" name="inputText">
+        <button type="submit" class="btn btn-secondary" id="submitButton">Classify</button>
+    </form>
+</div>
+{% endblock %}
